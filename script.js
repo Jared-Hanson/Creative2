@@ -50,7 +50,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function(even
         console.log(moment(json.list[i].dt_txt).format('h:00 a'));
         if(moment(json.list[i].dt_txt).format('h:00 a') == time1 || moment(json.list[i].dt_txt).format('h:00 a') == time2 || moment(json.list[i].dt_txt).format('h:00 a') == time3){
         forecast +="<h4>" + moment(json.list[i].dt_txt).format(' h:00 a') + "<h4>";
-	       forecast += "<p>Temperature: " + json.list[i].main.temp + "</p>";
+	       forecast += "<p>Temperature: " + json.list[i].main.temp + " &deg;F</h2>" +"</p>";
 	       forecast += '<img src="http://openweathermap.org/img/w/' + json.list[i].weather[0].icon + '.png"/>'
        }
       }
