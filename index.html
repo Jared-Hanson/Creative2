@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>Lab 2</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Weather</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+  <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+  <link rel="stylesheet" href="assets/css/Header-Dark.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body class="text-left" style="height: 545px;margin: 0px;">
+  <div style="height: 120px;">
+    <header class="header-dark" style="height: 117px;">
+      <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
+        <div class="container"><a class="navbar-brand text-left text-white" href="#" target="_parent">Weather Forcast</a></div>
+      </nav>
+    </header>
+  </div>
+  <form>
+    <label>Enter a U.S. city</label>
+    <input id="weatherInput" type="text"></input><br />
+    <input id="weatherSubmit" type="submit" value="Submit"></input>
+  </form>
 
-  <h1>Lab 2</h1>
 
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="weatherResults"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="forecastResults"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-basic" style="height: 40px;">
+    <footer style="height: 19px;"><a class="text-dark" href="https://github.com/BYU-CS-260-Winter-2020/lab-2-weather-app-Jared-Hanson">GitHub Link</a></footer>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
   <script text="type/javascript" src="/script.js">
   </script>

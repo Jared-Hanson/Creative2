@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 800px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: #5D6063;
+}
+.bg-dark {
+  background-color: #F7A87E !important;
+}
+h4{
+  font-size: 5px;
+}
