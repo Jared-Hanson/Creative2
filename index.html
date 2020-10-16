@@ -9,23 +9,31 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
   <link rel="stylesheet" href="assets/css/Footer-Basic.css">
   <link rel="stylesheet" href="assets/css/Header-Dark.css">
+  <link rel="stylesheet" href="assets/css/Header-Blue.css">
+  <link rel="stylesheet" href="assets/css/Newsletter-Subscription-Form.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="text-left" style="height: 545px;margin: 0px;">
-  <div style="height: 120px;">
-    <header class="header-dark" style="height: 117px;">
-      <nav class="navbar navbar-dark navbar-expand-lg navigation-clean-search">
-        <div class="container"><a class="navbar-brand text-left text-white" href="#" target="_parent">Weather Forcast</a></div>
-      </nav>
-    </header>
-  </div>
-  <form>
-    <label>Enter a U.S. city</label>
-    <input id="weatherInput" type="text"></input><br />
-    <input id="weatherSubmit" type="submit" value="Submit"></input>
-  </form>
-
+  <div>
+        <div class="header-blue" style="height: 50px;">
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
+                <div class="container-fluid"><a class="navbar-brand" href="#">Poke-Dex</a></div>
+            </nav>
+        </div>
+    </div>
+    <div class="newsletter-subscribe">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Welcome to the Online Pokedex!</h2>
+                <p class="text-center">Please input any pokemon below to see its information!&nbsp; Examples include: ditto, pikachu, pichu, jigglypuff...</p>
+            </div>
+            <form class="form-inline" method="post">
+                <div class="form-group"><input class="form-control" id="pokemonText" name="email" placeholder="butterfree"></div>
+                <div class="form-group"><button class="btn btn-primary" id="pokemon">Search</button></div>
+            </form>
+        </div>
+    </div>
 
   <div>
     <div id= "MainWeather" class="container">
@@ -46,8 +54,8 @@
       </div>
     </div>
   </div>
-  <div class="footer-basic" style="height: 40px;">
-    <footer style="height: 19px;"><a class="text-dark" href="https://github.com/BYU-CS-260-Winter-2020/lab-2-weather-app-Jared-Hanson">GitHub Link</a></footer>
+  <div class="footer-basic" style="height: 40px;" style="background color: #ee372b">
+    <footer style="height: 19px;" ><a class="text-dark" href="https://github.com/Jared-Hanson/Creative2.com">GitHub Link</a></footer>
   </div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
